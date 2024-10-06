@@ -1,0 +1,18 @@
+{
+    "image": "python:latest",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.vscode-pylance",
+                "ms-python.python",
+                "ms-python.debugpy",
+                "redhat.vscode-yaml",
+                "redhat.ansible"
+            ]
+        }
+        },
+    "postCreateCommand": "pip3 install --root-user-action ignore -r .devcontainer/requirements.txt",
+    "mounts": [
+  "source=C:/statements,target=/statements,type=bind,consistency=cached"
+]
+    }
